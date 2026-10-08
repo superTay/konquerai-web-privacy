@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="index,follow">
   <title>Política de privacidad — KonquerAI</title>
-  <meta name="description" content="Política de privacidad de KonquerAI Mobile. Información sobre el tratamiento de datos personales conforme al RGPD.">
+  <meta name="description" content="Política de privacidad de KonquerAI (app móvil y web). Información sobre el tratamiento de datos personales conforme al RGPD.">
   <link rel="canonical" href="https://konquerai.com/privacy">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -203,6 +203,20 @@
       color: var(--ink);
     }
 
+    mark.confirmar {
+      background: #fff3bf;
+      color: var(--ink);
+      padding: 0.05em 0.25em;
+      border-radius: 2px;
+    }
+
+    .draft {
+      border: 1px solid var(--accent-soft);
+      background: rgba(168, 107, 30, 0.07);
+      padding: 0.8rem 1rem;
+      font-size: 0.95rem;
+    }
+
     .footer {
       max-width: var(--measure);
       margin: 5rem auto 0;
@@ -242,20 +256,21 @@
   </div>
 
   <h1 class="title">Política de privacidad</h1>
-  <p class="subtitle">KonquerAI Mobile</p>
-  <p class="updated">Última actualización: 16 de mayo de 2026</p>
+  <p class="subtitle">KonquerAI — app móvil y web</p>
+  <p class="updated">Última actualización: 8 de octubre de 2026</p>
 
   <article>
+    <p>Esta política cubre la app móvil KonquerAI y la web de la aplicación (app.konquerai.com), que comparten la misma cuenta y los mismos datos.</p>
+    <p class="draft"><strong>BORRADOR PARA REVISIÓN.</strong> Las marcas <mark class="confirmar">[CONFIRMAR con Christian]</mark> señalan datos que no se han podido comprobar desde el código ni con la documentación pública. Hay que resolverlas o quitarlas antes de publicar. Ver <code>docs/PRIVACY_INVENTARIO_2026-10.md</code>.</p>
 
     <h2><span class="num">§ 01</span>Quién es el responsable del tratamiento</h2>
-    <p><strong>Responsable:</strong> Christian Marzal Della-Rovere.<br>
-       <strong>Contacto:</strong> <a href="mailto:info@konquerai.com">info@konquerai.com</a>.</p>
+    <p><strong>Responsable</strong>: Christian Marzal Della-Rovere. <mark class="confirmar">[CONFIRMAR con Christian: titular legal del servicio — persona física o KonquerAI LLC — y dirección postal]</mark><br>
+       <strong>Contacto</strong>: info@konquerai.com.</p>
     <p>Si tienes dudas o quieres ejercer tus derechos, escríbenos a esa dirección.</p>
-
+    <p><strong>Tus clientes y proveedores.</strong> Cuando guardas en KonquerAI datos de tus clientes y proveedores (nombre, NIF, dirección, correo, teléfono y las facturas que les emites o te emiten), <strong>tú eres el responsable de esos datos</strong> y KonquerAI los trata <strong>por tu encargo</strong>, solo para darte el servicio y siguiendo tus instrucciones (es lo que la ley llama «encargado del tratamiento»). <mark class="confirmar">[CONFIRMAR con Christian: dónde se acepta el contrato de encargado del tratamiento del art. 28 RGPD entre KonquerAI y cada usuario — términos de uso o documento aparte]</mark></p>
 
     <h2><span class="num">§ 02</span>Qué datos recogemos y por qué</h2>
-    <p>KonquerAI Mobile es una herramienta de gestión fiscal y administrativa para autónomos del sector de la construcción. Para que funcione necesitamos tratar los siguientes datos:</p>
-
+    <p>KonquerAI es una herramienta de gestión fiscal y administrativa para autónomos del sector de la construcción. Para que funcione necesitamos tratar los siguientes datos:</p>
     <h3>2.1. Datos de identificación de tu cuenta</h3>
     <ul>
       <li>Email y contraseña (la contraseña se almacena cifrada en Supabase Auth — nosotros nunca la vemos en claro).</li>
@@ -264,112 +279,139 @@
       <li>Dirección postal, teléfono.</li>
       <li>Logotipo (opcional).</li>
     </ul>
-    <p class="legal-base"><strong>Base legal:</strong> ejecución del contrato (te prestamos el servicio que has contratado) y cumplimiento de obligaciones legales (Ley General Tributaria; obligación de identificar al emisor de facturas).</p>
-
+    <p class="legal-base"><strong>Base legal</strong>: ejecución del contrato (te prestamos el servicio que has contratado) y cumplimiento de obligaciones legales (Ley General Tributaria; obligación de identificar al emisor de facturas).</p>
     <h3>2.2. Datos de tu actividad profesional</h3>
     <ul>
-      <li>Clientes y proveedores que tú das de alta (nombre, NIF, email).</li>
-      <li>Presupuestos y facturas emitidas y recibidas (importes, partidas, IVA, IRPF).</li>
-      <li>Fotografías de obras o trabajos que tú decides adjuntar.</li>
+      <li>Clientes y proveedores que tú das de alta (nombre, NIF, email, teléfono, municipio o dirección de obra).</li>
+      <li>Presupuestos y facturas emitidas y recibidas (importes, partidas, IVA, IRPF), con los nombres, NIF y direcciones que aparezcan en ellas.</li>
+      <li>Fotografías de obras, fotos y escaneos de facturas y tickets que tú decides adjuntar.</li>
       <li>PDFs y documentos generados.</li>
       <li>Datos del negocio (oficio, tarifas, condiciones).</li>
+      <li>En la versión web: los correos con facturas que reenvías a tu dirección de recepción de KonquerAI, y los movimientos de tu banco (los de los extractos que subes o, si conectas tu banco, los que nos facilita tu banco a través de Enable Banking).</li>
     </ul>
-    <p class="legal-base"><strong>Base legal:</strong> ejecución del contrato. Estos datos son tuyos y solo se usan dentro de tu cuenta.</p>
-
-    <h3>2.3. Datos técnicos</h3>
+    <p class="legal-base"><strong>Base legal</strong>: ejecución del contrato. Estos datos son tuyos y solo se usan dentro de tu cuenta.</p>
+    <h3>2.3. Lo que dices a los asistentes</h3>
     <ul>
-      <li>Logs de errores y diagnóstico.</li>
+      <li>El texto, el audio y las fotos que envías al asistente de presupuestos, al asistente de facturas, al escáner y a LucIA.</li>
+      <li>Tus preguntas y las respuestas de LucIA, y la valoración (pulgar arriba o abajo) que les des.</li>
+      <li>El historial reciente de cada conversación, para que el asistente recuerde de qué hablabais.</li>
+    </ul>
+    <p class="legal-base"><strong>Base legal</strong>: tu consentimiento, que te pedimos antes de la primera vez y puedes retirar cuando quieras (apartado 5.3). El tratamiento de los correos de facturas que tú mismo reenvías a KonquerAI es parte del servicio que has configurado (ejecución del contrato).</p>
+    <h3>2.4. Datos técnicos</h3>
+    <ul>
+      <li>Registros (logs) de errores y de funcionamiento del servicio. Pueden incluir fragmentos de lo que estabas haciendo (por ejemplo, el concepto de una partida que dictaste cuando algo falló).</li>
       <li>Tipo de dispositivo y versión del sistema operativo (cuando hay un problema técnico).</li>
     </ul>
-    <p class="legal-base"><strong>Base legal:</strong> interés legítimo en mantener el servicio operativo y seguro.</p>
-
-    <h3>2.4. Lo que NO recogemos</h3>
+    <p class="legal-base"><strong>Base legal</strong>: interés legítimo en mantener el servicio operativo y seguro.</p>
+    <h3>2.5. Lo que NO recogemos</h3>
     <ul>
       <li>No utilizamos cookies de seguimiento publicitario.</li>
       <li>No recopilamos tu ubicación GPS.</li>
       <li>No accedemos a tu agenda, contactos ni mensajes.</li>
       <li>No compartimos tus datos con redes publicitarias.</li>
       <li>No usamos identificadores de seguimiento entre apps (IDFA / Apple Tracking Transparency no aplica).</li>
+      <li>La app móvil no incluye herramientas de analítica, publicidad ni informes de fallos de terceros. (Comprobado en la versión 1.3.0.)</li>
+      <li><mark class="confirmar">[CONFIRMAR con Christian: la app descarga las tipografías de Google Fonts al abrirse, lo que da a Google la dirección IP del dispositivo. Si se mantiene, hay que decirlo aquí; si se empaquetan las fuentes en la app, no.]</mark></li>
     </ul>
-
 
     <h2><span class="num">§ 03</span>Permisos del dispositivo</h2>
     <p>La app pide los siguientes permisos solo cuando los necesita y siempre puedes revocarlos desde los ajustes del sistema:</p>
     <ul>
       <li><strong>Cámara</strong>: para escanear facturas en papel y adjuntar fotos a presupuestos.</li>
-      <li><strong>Micrófono</strong>: para dictar mensajes al asistente por voz.</li>
+      <li><strong>Micrófono</strong>: para dictar mensajes a los asistentes y a LucIA por voz.</li>
+      <li><strong>Reconocimiento de voz (iPhone)</strong>: mientras grabas, el iPhone te enseña en pantalla lo que va entendiendo. Eso lo hace el reconocimiento de voz de Apple, que según el dispositivo puede enviar el audio a los servidores de Apple. Es independiente de lo que enviamos nosotros (apartado 5).</li>
       <li><strong>Galería de fotos</strong>: para adjuntar imágenes ya guardadas a presupuestos y facturas.</li>
     </ul>
 
-
     <h2><span class="num">§ 04</span>Con quién compartimos tus datos</h2>
-    <p>Tus datos se almacenan y procesan en los siguientes proveedores (“encargados del tratamiento”) con los que tenemos firmado un contrato conforme al artículo 28 del RGPD:</p>
+    <p>No vendemos ni cedemos tus datos a terceros con fines comerciales. Para prestarte el servicio usamos los proveedores que se indican a continuación («encargados del tratamiento»). Los de inteligencia artificial se explican aparte, en el apartado 5.</p>
+    <p><strong>Dónde se guardan y se procesan tus datos</strong></p>
     <ul>
-      <li><strong>Supabase Inc.</strong> — base de datos, autenticación y almacenamiento de archivos. Servidores ubicados en la Unión Europea (Irlanda, AWS eu-west-1).</li>
-      <li><strong>n8n (servidor propio)</strong> — orquestación de procesos de negocio. Servidores propios alojados en la Unión Europea.</li>
-      <li><strong>Google LLC</strong> (Google Drive API) — almacenamiento de los PDFs de tus facturas y presupuestos. Transferencia internacional a EE.UU. amparada por la adhesión de Google LLC al EU-U.S. Data Privacy Framework y, subsidiariamente, por las cláusulas contractuales tipo aprobadas por la Comisión Europea (Decisión 2021/914). Acuerdo de procesador disponible en <a href="https://privacy.google.com/businesses/processorterms/" target="_blank" rel="noopener">privacy.google.com/businesses/processorterms</a>.</li>
+      <li><strong>Supabase</strong> — base de datos, inicio de sesión y archivos (por ejemplo, el logotipo). Servidores en la Unión Europea (Irlanda, AWS eu-west-1).</li>
+      <li><strong>Servidor propio con n8n</strong> — el programa que crea los PDF, envía los documentos y lee las facturas que recibes. <mark class="confirmar">[CONFIRMAR con Christian: país del centro de datos del servidor (Contabo)]</mark></li>
+      <li><strong>Google Drive (Google LLC)</strong> — almacenamiento de los PDF de tus facturas y presupuestos. Transferencia internacional a EE.UU. amparada por la adhesión de Google al EU-U.S. Data Privacy Framework y, subsidiariamente, por las cláusulas contractuales tipo de la Comisión Europea (Decisión 2021/914). Acuerdo de procesador: <a href="https://privacy.google.com/businesses/processorterms/" target="_blank" rel="noopener">https://privacy.google.com/businesses/processorterms/</a></li>
+      <li><strong>Vercel (EE.UU.)</strong> — aloja los ficheros de la web de la aplicación y de esta página. <mark class="confirmar">[CONFIRMAR con Christian: que no guarda datos de negocio de los usuarios]</mark></li>
     </ul>
-    <p>No vendemos ni cedemos tus datos a terceros con fines comerciales. Solo podemos divulgarlos si lo exige una autoridad judicial o administrativa con competencia para requerirlos.</p>
-
-
-    <h2><span class="num">§ 05</span>Servicios de IA de terceros</h2>
-    <p>Para ofrecer las funcionalidades de chat asistente, transcripción de notas de voz y extracción automática de datos en facturas escaneadas, KonquerAI utiliza dos proveedores de inteligencia artificial:</p>
+    <p><strong>Para recibir y enviar correo</strong></p>
     <ul>
-      <li><strong>OpenAI, L.L.C.</strong> (San Francisco, EE.UU.) — modelos <em>Whisper</em> y <em>GPT</em> — para el asistente de <strong>presupuestos</strong> (texto, audio y foto).</li>
-      <li><strong>Google LLC</strong> (vía API Google Gemini) — para el asistente de <strong>facturas</strong> y el escáner OCR de facturas recibidas (texto, audio y foto).</li>
+      <li><strong>Cloudflare (EE.UU.)</strong> — recibe los correos que reenvías a tu dirección de recepción de facturas y los pasa a nuestro servidor. <mark class="confirmar">[CONFIRMAR con Christian: servicio exacto de Cloudflare y qué conserva]</mark></li>
+      <li><strong>Resend (EE.UU.)</strong> — envía el correo de prueba de la configuración de recepción de facturas; recibe tu dirección de correo. <mark class="confirmar">[CONFIRMAR con Christian: contrato y retención]</mark></li>
+      <li><strong>PDF.co (EE.UU.)</strong> — cuando una factura llega como texto en el cuerpo del correo (sin adjunto), lo convierte a PDF para poder leerlo. Recibe el texto de ese correo. <mark class="confirmar">[CONFIRMAR con Christian: contrato (DPA), retención y país]</mark></li>
     </ul>
-
-    <h3>5.1. Qué datos se comparten con estos proveedores</h3>
-    <p>Solo cuando tú activas explícitamente una de estas funciones <strong>y tras aceptar el aviso de consentimiento</strong> que muestra la app la primera vez que las usas, enviamos al proveedor correspondiente exclusivamente la entrada concreta que estás procesando en ese momento:</p>
+    <p><strong>Solo si conectas tu banco (versión web)</strong></p>
     <ul>
-      <li><strong>Audio</strong>: las grabaciones de voz que dictas al asistente se envían al modelo de transcripción para convertirlas en texto.</li>
-      <li><strong>Imágenes</strong>: las fotos que escaneas con la cámara o adjuntas al chat se envían al modelo de visión para extraer texto y datos estructurados.</li>
-      <li><strong>Texto</strong>: los mensajes que escribes en el chat asistente se envían al modelo de lenguaje para que el asistente entienda tu petición y responda.</li>
+      <li><strong>Enable Banking</strong> — conecta con tu banco con tu permiso (normativa PSD2) para traernos tus movimientos. <mark class="confirmar">[CONFIRMAR con Christian: país, contrato y rol (encargado o responsable independiente)]</mark></li>
     </ul>
-
-    <h3>5.2. Qué NO compartimos</h3>
-    <p>No enviamos a OpenAI ni a Google Gemini tu lista de clientes, tu lista de proveedores, tus presupuestos almacenados, tus facturas almacenadas, tus datos fiscales (NIF, base imponible, IVA) ni ningún otro dato del estado de tu negocio que no sea estrictamente la entrada que estás procesando en ese momento. No enviamos datos identificativos personales (DNI, dirección, teléfono) salvo que tú mismo los incluyas en el contenido enviado.</p>
-
-    <h3>5.3. Retención por parte de los proveedores</h3>
-    <p>Operamos contra las APIs comerciales de OpenAI y Google Gemini bajo los términos comerciales estándar de cada uno:</p>
+    <p><strong>Avisos al equipo</strong></p>
     <ul>
-      <li><strong>OpenAI</strong>: las entradas enviadas vía API no se utilizan para entrenar modelos de OpenAI. OpenAI puede retener las entradas hasta 30 días con fines de prevención de abusos y luego las elimina. Detalle en <a href="https://openai.com/policies/api-data-usage-policies" target="_blank" rel="noopener">openai.com/policies/api-data-usage-policies</a>.</li>
-      <li><strong>Google Gemini</strong>: los datos enviados a la API de Gemini no se utilizan para entrenar modelos de Google. Detalle en <a href="https://cloud.google.com/gemini/docs/discover/data-governance" target="_blank" rel="noopener">cloud.google.com/gemini/docs/discover/data-governance</a>.</li>
+      <li><strong>Telegram y healthchecks.io</strong> — avisos técnicos internos cuando algo falla o se acerca un límite de gasto. <mark class="confirmar">[CONFIRMAR con Christian: que los avisos no incluyen datos de usuarios ni de sus facturas]</mark></li>
     </ul>
+    <p>Solo podemos divulgar tus datos si lo exige una autoridad judicial o administrativa con competencia para requerirlos.</p>
 
-    <h3>5.4. Transferencia internacional</h3>
-    <p>Tanto OpenAI como Google son sociedades estadounidenses. La transferencia de datos a EE.UU. está amparada por la adhesión de ambas al <strong>EU-U.S. Data Privacy Framework</strong> y, subsidiariamente, por las cláusulas contractuales tipo (SCC) aprobadas por la Comisión Europea (Decisión 2021/914). Sus políticas de privacidad respectivas están en <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener">openai.com/policies/privacy-policy</a> y <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.</p>
-
-    <h3>5.5. Tu consentimiento</h3>
-    <p>La primera vez que usas una función que envía datos a uno de estos proveedores, la app te muestra un aviso explícito describiendo qué datos se van a enviar y a quién. Solo procedemos si aceptas. Puedes <strong>revocar el consentimiento</strong> en cualquier momento desde <strong>Ajustes → Servicios de IA</strong>. Tras la revocación, las funciones de chat asistente, escáner OCR y dictado por voz dejan de estar disponibles hasta que vuelvas a aceptar.</p>
-
-    <h3>5.6. Alternativas sin IA</h3>
-    <p>Toda la funcionalidad principal de KonquerAI (crear presupuestos manualmente, emitir facturas, consultar tu cartera de clientes y proveedores, gestionar cobros) está disponible <strong>sin</strong> usar las funciones de IA. Si decides no aceptar el envío de datos a OpenAI o Google Gemini, puedes seguir usando la app con normalidad introduciendo los datos a mano.</p>
-
+    <h2><span class="num">§ 05</span>Servicios de inteligencia artificial de terceros</h2>
+    <p>Los asistentes de KonquerAI usan servicios de IA externos, <strong>casi todos con servidores en EE.UU.</strong>, fuera del Espacio Económico Europeo. Son opcionales: la app te pide permiso antes de la primera vez (apartado 5.3) y todo lo importante se puede hacer a mano.</p>
+    <h3>5.1. Qué función usa qué proveedor y qué datos recibe</h3>
+    <p><strong>LucIA (el asistente de la cara flotante)</strong></p>
+    <ul>
+      <li>Recibe: tu pregunta (si hablas, primero se convierte en texto con Groq); el nombre y la forma jurídica de tu negocio; las últimas preguntas y respuestas de la conversación; y lo que LucIA consulta para contestarte: cifras de facturas, banco y presupuestos y, junto a ellas, <strong>nombres de clientes y proveedores, conceptos y números de factura y fechas de vencimiento</strong> cuando salen en la respuesta.</li>
+      <li>Proveedores: <strong>OpenRouter</strong> (EE.UU.), que envía la consulta al modelo de <strong>OpenAI</strong> «GPT-6 Luna»; y <strong>Groq</strong> (EE.UU.) para la voz.</li>
+      <li>Las cifras las calcula KonquerAI con sus propias consultas; la IA solo redacta la respuesta.</li>
+    </ul>
+    <p><strong>Asistente de presupuestos y asistente de facturas</strong></p>
+    <ul>
+      <li>Recibe: el texto, el audio (convertido antes en texto con Groq) o la foto que envías; los datos de tu negocio (nombre, oficio, tarifas y servicios, condiciones); hasta 60 de tus clientes habituales (nombre, NIF y municipio) para reconocerlos por su nombre; y lo que ya llevas rellenado del documento.</li>
+      <li>Proveedores: <strong>OpenRouter</strong> (EE.UU.), que envía la consulta a los modelos <strong>Claude de Anthropic</strong>; y <strong>Groq</strong> (EE.UU.) para la voz.</li>
+    </ul>
+    <p><strong>Escáner de facturas y tickets, y lectura de las facturas que llegan por correo</strong></p>
+    <ul>
+      <li>Recibe: la foto o el PDF del documento (con los nombres, NIF y direcciones del proveedor y de tu cliente que aparezcan) y la fecha de hoy. No enviamos tus listas de clientes ni de proveedores.</li>
+      <li>Proveedores: <strong>Google Gemini</strong> (Google LLC, EE.UU.) como lector principal y, si falla, <strong>OpenAI</strong> (EE.UU.) como alternativa.</li>
+    </ul>
+    <h3>5.2. Qué hace cada proveedor con tus datos</h3>
+    <p>Lo que sigue se basa en la documentación pública de cada proveedor y en cómo hemos configurado el servicio. Donde no hemos podido comprobar algo, lo decimos.</p>
+    <ul>
+      <li><strong>OpenRouter</strong>: es un intermediario. Según su documentación, no guarda el contenido de las peticiones salvo que se active el registro de entradas y salidas en la cuenta, y sí guarda datos de uso (cantidad de texto, tiempos). <mark class="confirmar">[CONFIRMAR con Christian: que el registro de entradas y salidas está desactivado en nuestras claves de OpenRouter]</mark> Tiene un contrato de tratamiento de datos con cláusulas contractuales tipo. Lo que ocurra después depende del proveedor del modelo al que envía la consulta.</li>
+      <li><strong>LucIA — filtro de privacidad</strong>: pedimos a OpenRouter que solo use proveedores que declaren no guardar los datos de forma duradera ni usarlos para entrenar (opción <code>data_collection: deny</code>). Es un filtro que se apoya en lo que declara cada proveedor, <strong>no es una garantía contractual de que no se guarde nada</strong>: el proveedor del modelo puede conservar copias temporales, por ejemplo hasta 30 días para detectar abusos. <mark class="confirmar">[CONFIRMAR con Christian: qué proveedor atiende en la práctica a «GPT-6 Luna» y qué retención declara]</mark></li>
+      <li><strong>Asistentes de presupuestos y facturas</strong>: de momento no usan ese filtro. <mark class="confirmar">[CONFIRMAR con Christian: retención y uso para entrenar de Anthropic con nuestra cuenta, y si conviene activar el filtro]</mark></li>
+      <li><strong>Groq</strong>: según su centro de confianza, no usa datos de sus clientes para entrenar sus propios modelos, y no conserva las peticiones salvo registros de hasta 30 días en casos limitados (fallos del servicio o sospecha de abuso); existe una opción de retención cero. Los datos que guarda están en EE.UU. <mark class="confirmar">[CONFIRMAR con Christian: si la retención cero está activada en nuestra cuenta de Groq]</mark></li>
+      <li><strong>Google Gemini</strong>: según sus condiciones, en el servicio de pago Google no usa lo que envías para mejorar sus productos y puede guardar las peticiones durante un tiempo limitado solo para detectar usos prohibidos; en el servicio gratuito sí puede usarlo y revisarlo personas. <mark class="confirmar">[CONFIRMAR con Christian: que la clave de Gemini es de un proyecto con facturación activada]</mark></li>
+      <li><strong>OpenAI (alternativa del escáner)</strong>: según su documentación, la API guarda registros de abuso hasta 30 días salvo acuerdo especial. <mark class="confirmar">[CONFIRMAR con Christian: que OpenAI no entrena con datos de la API en nuestra cuenta y si hay retención cero]</mark></li>
+    </ul>
+    <h3>5.3. Tu consentimiento</h3>
+    <p>La primera vez que usas una función que envía contenido a estos proveedores, la app te muestra un aviso con quién lo recibe, y solo seguimos si aceptas. Hay un aviso para los asistentes y el escáner y otro, aparte, para LucIA. Puedes <strong>retirar el consentimiento</strong> en cualquier momento en <strong>Ajustes → Servicios de IA</strong>: al revocar se retiran los dos permisos y los asistentes, el escáner, el dictado por voz y LucIA dejan de funcionar hasta que vuelvas a aceptar. <mark class="confirmar">[CONFIRMAR con Christian: cómo se pide y se retira este consentimiento en la versión web]</mark></p>
+    <p><strong>Una excepción importante</strong>: las facturas que reenvías por correo a tu dirección de recepción de KonquerAI se leen en nuestro servidor con Google Gemini (y OpenAI si falla) aunque hayas revocado el permiso de la app, porque son parte del servicio que tú mismo configuras. Para dejar de enviar ese correo, desactiva el reenvío en tu cuenta de correo o escríbenos y lo desactivamos nosotros.</p>
+    <h3>5.4. Transferencias internacionales</h3>
+    <p>Estos proveedores están en EE.UU. La transferencia se ampara en las <strong>cláusulas contractuales tipo</strong> de la Comisión Europea (Decisión 2021/914) incluidas en los contratos de tratamiento de datos de OpenRouter y de Groq, y en el marco <strong>EU-U.S. Data Privacy Framework</strong> y las cláusulas tipo de Google para sus servicios. <mark class="confirmar">[CONFIRMAR con Christian: las bases de transferencia de OpenAI y de Anthropic, y la firma o aceptación de cada contrato (DPA)]</mark></p>
+    <h3>5.5. Alternativas sin IA</h3>
+    <p>Toda la funcionalidad principal de KonquerAI (crear presupuestos a mano, emitir facturas, consultar clientes y proveedores, gestionar cobros) está disponible <strong>sin</strong> usar las funciones de IA. Si decides no aceptar, puedes seguir usando la app con normalidad introduciendo los datos a mano.</p>
 
     <h2 id="eliminacion-de-datos"><span class="num">§ 06</span>Cuánto tiempo conservamos tus datos</h2>
     <ul>
-      <li><strong>Mientras tu cuenta esté activa</strong>: conservamos todos tus datos para que puedas usar el servicio.</li>
-      <li><strong>Cuando cierras tu cuenta</strong>: el borrado es <strong>inmediato y completo</strong>. Eliminamos en segundos tu perfil, presupuestos, facturas, clientes, proveedores, configuración del negocio y sesiones activas. La acción no se puede deshacer. El RGPD nos otorga hasta 30 días como plazo máximo legal de borrado, pero no necesitamos ese margen.</li>
-      <li><strong>Datos de facturación tras cierre de cuenta</strong>: cuando borras tu cuenta, eliminamos también todas las facturas y presupuestos que hayas creado en KonquerAI. Recuerda que, como autónomo, eres tú quien tiene la obligación legal de conservar tus registros fiscales durante 4 años (Ley 58/2003, art. 70). Antes de cerrar tu cuenta, asegúrate de descargar y guardar localmente los documentos que necesites conservar.</li>
+      <li><strong>Mientras tu cuenta esté activa</strong>: conservamos tus datos para que puedas usar el servicio.</li>
+      <li><strong>Conversaciones con LucIA</strong>: 6 meses; después se borran solas cada día. Se borran antes si cierras tu cuenta.</li>
+      <li><strong>Historial de los asistentes de presupuestos y facturas</strong>: lo guardamos solo para que el asistente recuerde la conversación; se limita a los últimos 40 mensajes por conversación y se borra pasadas 24 horas. <mark class="confirmar">[CONFIRMAR con Christian: que la tarea de borrado está activa en producción para presupuestos y para facturas — en el código solo consta programada la de presupuestos]</mark></li>
+      <li><strong>Registros técnicos</strong>: los de funcionamiento normal, 30 días; los avisos, 90 días; los errores, 1 año. <mark class="confirmar">[CONFIRMAR con Christian: que la tarea de borrado de registros está activa en producción]</mark></li>
+      <li><strong>Lo que guardan los proveedores de IA</strong>: lo indicado en el apartado 5.2.</li>
+      <li><strong>Cuando cierras tu cuenta</strong> (Ajustes → Cerrar cuenta y borrar mis datos): eliminamos de inmediato tu perfil, presupuestos, facturas, clientes, proveedores, configuración del negocio, datos de banco, conversaciones con LucIA y sesiones activas. La acción no se puede deshacer. Quedan fuera de ese borrado inmediato, y se eliminan por su cuenta más tarde, el historial temporal de los asistentes (24 horas) y los registros técnicos (hasta 1 año). <mark class="confirmar">[CONFIRMAR con Christian: qué pasa con los PDF guardados en Google Drive al cerrar la cuenta y si el borrado cubre también el historial de los asistentes]</mark></li>
+      <li><strong>Datos de facturación tras cierre de cuenta</strong>: recuerda que, como autónomo, eres tú quien tiene la obligación legal de conservar tus registros fiscales durante 4 años (Ley 58/2003, art. 70). Antes de cerrar tu cuenta, descarga y guarda los documentos que necesites conservar. <mark class="confirmar">[CONFIRMAR con Christian: el aviso que sale en la app al cerrar la cuenta dice que conservamos 4 años datos fiscales mínimos; el borrado actual lo elimina todo. Hay que decidir cuál es la verdad y dejar los dos textos iguales]</mark></li>
       <li><strong>Nuestros propios registros</strong>: conservaremos durante el plazo legal exigible los datos mínimos necesarios para acreditar nuestra relación contractual contigo (fecha de alta, fecha de baja, facturas que KonquerAI te haya emitido por el servicio). Esto deriva de <strong>nuestras</strong> obligaciones fiscales como prestadores del servicio, no del contenido que tú almacenaste en la app.</li>
     </ul>
-
 
     <h2><span class="num">§ 07</span>Tus derechos</h2>
     <p>Como titular de los datos puedes ejercer en cualquier momento:</p>
     <ul>
       <li><strong>Acceso</strong>: pedir copia de toda la información que tenemos sobre ti.</li>
       <li><strong>Rectificación</strong>: corregir datos inexactos.</li>
-      <li><strong>Supresión</strong> (“derecho al olvido”): pedir que borremos tus datos. Desde la app puedes hacerlo directamente: <strong>Ajustes → Cerrar cuenta y borrar mis datos</strong>.</li>
+      <li><strong>Supresión</strong> («derecho al olvido»): pedir que borremos tus datos. Desde la app puedes hacerlo directamente: <strong>Ajustes → Cerrar cuenta y borrar mis datos</strong>.</li>
       <li><strong>Limitación</strong>: pedir que dejemos de procesar tus datos en determinadas circunstancias.</li>
       <li><strong>Portabilidad</strong>: recibir tus datos en un formato estructurado y legible (JSON / ZIP) para llevártelos a otro proveedor.</li>
       <li><strong>Oposición</strong>: oponerte a que tratemos tus datos por interés legítimo.</li>
-      <li><strong>No ser objeto de decisiones automatizadas</strong>: no aplicamos perfilado ni decisiones automatizadas que produzcan efectos jurídicos sobre ti.</li>
+      <li><strong>Retirar el consentimiento</strong> de los servicios de IA, cuando quieras, en <strong>Ajustes → Servicios de IA</strong>. No afecta a lo que ya se hubiera tratado antes.</li>
+      <li><strong>No ser objeto de decisiones automatizadas</strong>: no aplicamos perfilado ni decisiones automatizadas que produzcan efectos jurídicos sobre ti. Los asistentes proponen y las decisiones son tuyas.</li>
     </ul>
-    <p>Para ejercerlos, escríbenos a <a href="mailto:info@konquerai.com">info@konquerai.com</a>. Responderemos en un plazo máximo de un mes.</p>
+    <p>Si lo que quieres es ejercer estos derechos sobre los datos de <strong>tus clientes o proveedores</strong> (porque te los piden a ti), eres tú quien debe responderles; nosotros te ayudamos a localizarlos, corregirlos o borrarlos.</p>
+    <p>Para ejercerlos, escríbenos a info@konquerai.com. Responderemos en un plazo máximo de un mes.</p>
     <p>Si no estás conforme con nuestra respuesta puedes presentar una reclamación ante la <strong>Agencia Española de Protección de Datos</strong> (<a href="https://www.aepd.es" target="_blank" rel="noopener">www.aepd.es</a>).</p>
-
 
     <h2><span class="num">§ 08</span>Cómo protegemos tus datos</h2>
     <ul>
@@ -378,24 +420,26 @@
       <li>Los tokens de sesión en el dispositivo se guardan en el almacenamiento seguro del sistema operativo (Keychain en iOS, EncryptedSharedPreferences en Android).</li>
       <li>Aplicamos reglas de seguridad a nivel de fila (Row Level Security) para que cada usuario solo pueda acceder a sus propios datos.</li>
     </ul>
-
     <h3>8.1. Cómo se sirven los documentos PDF</h3>
     <p>Los PDFs de tus facturas y presupuestos se generan en Google Drive bajo nuestra cuenta de servicio. <strong>Estos archivos son privados por defecto</strong>: ningún tercero puede acceder a ellos sin tu autorización, ni siquiera con la URL del archivo. Cuando abres un documento desde la app o el dashboard, el sistema descarga los bytes del PDF a través de nuestro servicio (autenticado mediante un token de cabecera HTTP <code>Authorization: Bearer</code>) y te los entrega directamente. En ningún momento incrustamos credenciales en URLs ni almacenamos enlaces firmados de Drive en la base de datos.</p>
 
-
     <h2><span class="num">§ 09</span>Menores</h2>
-    <p>KonquerAI Mobile está dirigida a personas autónomas en activo, mayores de 18 años. No recopilamos conscientemente datos de menores. Si crees que un menor ha facilitado datos a través de la app, escríbenos y los borraremos.</p>
-
+    <p>KonquerAI está dirigida a personas autónomas en activo, mayores de 18 años. No recopilamos conscientemente datos de menores. Si crees que un menor ha facilitado datos a través de la app, escríbenos y los borraremos.</p>
 
     <h2><span class="num">§ 10</span>Cambios en esta política</h2>
-    <p>Podemos actualizar esta política para reflejar mejoras del servicio o cambios legislativos. Te notificaremos en la propia app cualquier cambio sustancial. La fecha de la última actualización aparece al principio de este documento.</p>
-
+    <p>Podemos actualizar esta política para reflejar mejoras del servicio o cambios legislativos. Te avisaremos en la propia app de cualquier cambio sustancial. La fecha de la última actualización aparece al principio de este documento.</p>
+    <h3>Historial de cambios</h3>
+    <ul>
+      <li><strong>8 de octubre de 2026</strong>: se detallan los servicios de IA realmente usados (OpenRouter, Anthropic, OpenAI, Groq, Google Gemini) y los datos que recibe cada uno; se añade LucIA; se corrigen los proveedores de los asistentes de presupuestos y facturas; se añaden los proveedores de correo, conversión de PDF y banco; se indican plazos de conservación por tipo de dato; se aclara tu papel y el nuestro respecto a los datos de tus clientes y proveedores; se añade el reconocimiento de voz de iPhone.</li>
+      <li><strong>16 de mayo de 2026</strong>: se añade el apartado de servicios de IA de terceros y el consentimiento previo.</li>
+      <li><strong>6 de mayo de 2026</strong>: primera versión.</li>
+    </ul>
 
     <h2><span class="num">§ 11</span>Contacto</h2>
     <p>Para cualquier cuestión sobre privacidad, datos personales o esta política:</p>
     <ul>
-      <li><strong>Email</strong>: <a href="mailto:info@konquerai.com">info@konquerai.com</a></li>
-      <li><strong>Asunto sugerido</strong>: “[Privacidad] tu consulta”</li>
+      <li><strong>Email</strong>: info@konquerai.com</li>
+      <li><strong>Asunto sugerido</strong>: «[Privacidad] tu consulta»</li>
     </ul>
 
   </article>
